@@ -8,13 +8,13 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Entre com seu peso: ");
-        double weight = RecebePesoAltura.RecebePeso();
+        System.out.println("Meu peso: ");
+        double weight = 55.4;
        
-        System.out.println("Entre com sua altura: ");
-        double height = RecebePesoAltura.RecebeAltura();
+        System.out.println("Minha altura: ");
+        double height = 1.60;
         
-        double imc = weight / height * height;
+        double imc = weight / (height * height);
 
         String validacao = ValidaImc.ValidaMassaCorporal(imc);
         System.out.println( "Você está na categoria: " + validacao );
